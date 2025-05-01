@@ -1,0 +1,21 @@
+.container{
+    position: fixed;
+    background-color: #e5e5e5;
+    width:100%;
+    left:0;
+    top:0;
+    bottom:50px;
+}
+
+.footer{
+    background-color: #f5f5f5;
+    /* background: linear-gradient(to right, #c0d9ff, #effcff); */
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 14px;
+}
+

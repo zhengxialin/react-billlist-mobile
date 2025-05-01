@@ -1,0 +1,63 @@
+.leftMask{
+    position:absolute;
+    left:0;
+    z-index: 1;
+    background-image: linear-gradient(90deg, #c6ece2, #c6ece255);
+    width: 60px;
+    height:43px;
+    transform: translateY(-1px);
+    pointer-events: none;
+}
+.rightMask{
+    position:absolute;
+    text-align: right;
+    right:0;
+    z-index: 1;
+    background-image: linear-gradient(90deg,#d9e7e755,#d9e7e7);
+    width: 60px;
+    height:43px;
+    transform: translateY(-1px);
+    pointer-events: none;
+}
+
+.yearList{
+    width:100vw;
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    background-image: linear-gradient(90deg, #c6ece2, #d9e7e7);
+    box-shadow: 0 1px 5px 0 #73b4b4 ;
+    scrollbar-color: #73b4b4 ;
+    scroll-behavior: smooth;
+    transform: translateX(-30px);
+}
+.yearList::-webkit-scrollbar{
+    display:none;
+    height:5px;
+}
+.yearList::-webkit-scrollbar-thumb{
+    background-color: #9dd6cf;
+    border-radius: 3px 3px 0 0;
+}
+
+.yearListItem{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1d9599a8;
+    margin-right:10px;
+    min-width: 40px;
+    max-width:40px;
+    padding: 5px 20px 5px 20px;
+}
+
+/* for testing list scrolling center */
+.vertical-line {
+    position: fixed; 
+    top: 0;
+    left: 50%; 
+    width: 1px; 
+    height: 100vh; 
+    background-color: red; 
+    z-index: 9999; 
+    transform: translateX(-50%);
+  }

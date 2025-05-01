@@ -1,0 +1,176 @@
+body{
+  margin:0;
+  overflow: hidden;
+}
+
+.keepAccounts {  
+    height: 100vh;
+    background-color: #daf2e1;
+}
+
+.newBillNav {
+  --adm-font-size-10: 16px;
+  color: #121826;
+  background-color: transparent;
+}
+  
+.adm-nav-bar-back-arrow {
+  font-size: 20px;
+}
+  
+.billTypeWrapper{
+  height:50px;
+}
+
+.newBillType {
+  padding: 9px 0;
+  text-align: center;
+  --adm-font-size-9: 13px;
+  /* --adm-font-size-9 sets up the font size of text inside button */
+}
+
+.newBillType .selected {
+  color: #fff;
+  --background-color: #191d26;
+}
+
+.newBillType > :first-child{
+  margin-right:15px;
+}
+
+.inputFormWrapper {
+  padding: 10px 22.5px 20px;
+}
+  
+.inputFormRegion {
+  display: flex;  
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 11px 15px 11px 12px;
+  border: 2px solid #87c6ca;
+  border-radius: 9px;
+  background-color: #fff;
+}
+
+.newBillDate {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    padding: 5.5px 5px;
+    border-radius: 4px;
+    color: #69ae78;
+    background-color: #daf2e1;
+}
+
+.newBillDate .newBillIcon {
+  margin-right: 6px;
+  font-size: 17px;
+}
+.newBillDate .newBillText {
+  font-size: 16px;
+}
+
+.newBillInputFrame {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.newBillInput {
+  width: 100px;
+  max-width: 100%;
+  border:none;
+  outline: none;
+    flex: 1;
+    margin-right: 5px;
+    text-align: right;
+    font-size: 24px;
+    color: #69ae78;
+}
+.newBillInput::placeholder{
+  color: #d1d1d1;
+}
+
+.iconDollar {
+  font-size: 24px;
+}
+
+.billTypeList {
+  height: calc(100vh - 190px);
+  padding: 20px 11px;
+  padding-bottom: 70px;
+  overflow-y: scroll;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.billTypeList::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+  
+.billTypeList .billType {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #333;
+}
+  
+.billTypeList .newBillTitle {
+  padding-left: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: +0.5px;
+  color: #5ab3ab;
+}
+.billTypeList .newBillList {
+  display: flex;
+}
+.billTypeList .newBillList .newBillItem {
+  width: 65px;
+  height: 65px;
+  padding: 9px 0;
+  margin-right: 7px;
+  text-align: center;
+  border: 0.5px solid #fff;
+}
+.newBillItem:last-child {
+  margin-right: 0;
+}
+.allBillType{
+  margin-bottom: 10px;
+}
+.allBillType:last-child {
+  margin-bottom: 90px;
+}
+  
+.newBillList .newBillIcon{
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+.newBillList .newBillItem.selected {
+  border: 0.5px solid #c0f8cb;
+  border-radius: 25px;
+  background: #daf2e1;
+}
+  
+.btns {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  width: 200px;
+  border-width: 0;
+  background-color: #fafafa;
+  color: #616161;
+}
+.btn:first-child {
+  margin-right: 15px;
+}
+.btn.save {
+  background-color: #daf2e1;
+  color: #69ae78;
+}

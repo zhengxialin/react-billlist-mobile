@@ -1,0 +1,6 @@
+:root:root{
+    --adm-color-primary: #69ad78;
+}
+body {
+    touch-action: none;
+  }
